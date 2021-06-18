@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const token = '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';
+const token = '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';
 const api = axios.create({
     baseURL: 'https://api.github.com/',
     headers: {'Authorization': 'Bearer '+token} 

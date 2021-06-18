@@ -13,7 +13,8 @@ import { Button, Form, Overlay, Popover } from 'react-bootstrap';
 
 import api from '../../services/api';
 
-const Header = () => {
+const Header = (props) => {
+	const { loadContent  } = props;
 	const [show, setShow] = useState(false);
 	const [target, setTarget] = useState(null);
 	const ref = useRef(null);
@@ -22,12 +23,13 @@ const Header = () => {
 		setTarget(event.target);
 	};
 
-	const handleAddNewRepository = (e) => {
-		// document.getElementById('repositoryForm').value)
-		
-		api.post('/orgs/silasjsilvajr/repos', {name: document.getElementById('repositoryForm').value})
-		.then((response) => {
-			console.log(response);
+	const handleAddNewRepository = () => {	
+		let repositoryName = document.getElementById('repositoryForm').value;	
+		api.post('/orgs/silasjsilvajr/repos', {name: repositoryName})
+		.then(() => {
+			if (typeof newRepository === 'function') {
+				loadContent();
+			}
 		})
 	}
 
