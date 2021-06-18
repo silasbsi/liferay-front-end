@@ -1,0 +1,79 @@
+.header-content {
+    width: 100%;
+    background: #ffffff;
+    height: 64px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 600;
+    color: #6B6C7E;
+}
+
+/* search */
+.header-content .input-group {
+    width: 419px;
+}
+
+.header-content .input-group > input {
+    border-right: 0px solid;
+    background: #E5E5E5;
+}
+
+.header-content .input-group span {
+    background: #E5E5E5;;
+}
+
+/* github Icon */
+.header-content .github-icon svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* star and circle-half Icon */
+.header-content .grid-fill-icon svg,
+.header-content .circle-half-icon svg,
+.header-content .star-icon svg {
+    width: 16px;
+    height: 16px;
+}
+
+
+/* plus square fill icon */
+.header-content .plus-square-fill-icon svg {
+    width: 32px;
+    height: 32px;
+    color: #0B5FFF;
+}
+
+/* new repository */
+#popover-contained.popover{
+    width: 448px;
+    height: 212px;
+    max-width: 448px;
+}
+.new-repository {
+    margin: 9px 24px;
+}
+
+.new-repository .new-repository-content {
+    margin-top: 16px;
+    margin-bottom: 34px;
+}
+#popover-contained.popover .new-repository-footer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 63px;
+    padding: 0px 24px;
+    border-top: 1px solid #E7E7ED;
+}
+
+#popover-contained.popover .new-repository-footer .cancel-button {
+    margin-right: 16px;
+}
+
+#popover-contained.popover .new-repository-footer button {
+    height: 32px;
+    line-height: 0px;
+}
